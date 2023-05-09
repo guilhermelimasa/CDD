@@ -1,17 +1,8 @@
-for x in range(0, 10):
-    x = x + 1
-    print(x, end=" ")
-print("   agora decrescente: ")
-for x in range(10, 0, -1):
-    print(x, end=" ")
-
-print("   agora usando while: ")
-contador = 0
-while contador != 10:
-    contador += 1
-    print(contador, end=" ")
-print("   agora decrescente usando while: ")
-contador = 11
-while contador != 1:
-    contador -= 1
-    print(contador, end=" ")
+texto = 'O rato roeu a roupa do rei de roma'
+def L (text):
+    cont = 0
+    for c in texto:
+        if c in "aeiouAEIOU":
+            cont += 1
+    print(f"o número de vogais é {cont}")
+L(texto)

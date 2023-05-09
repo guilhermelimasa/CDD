@@ -1,6 +1,10 @@
-n1 = int(input("digite um número: "))
-n2 = int(input("digite outro número: "))
-while n2 == 0:
-    n2=int(input("digite um número diferente de zero: "))
-div = n1 / n2
-print(f"a divisão é {div}")
+a = []
+contador = 0
+somador = 0
+while contador <= 20:
+    somador -= 1
+    if somador <= 0:
+        a.append(somador)
+        contador += 1
+for x in range(20):
+    print(a[x])

@@ -1,9 +1,5 @@
-alunos = int(input("digite o número de alunos da sala: "))
-c = 1
-soma = 0
-while c <= alunos:
-    nota = float(input("digite sua nota: "))
-    c+=1
-    soma = soma + nota
-media = soma / alunos
-print(media)
+a = [2, 11, 6, 5, 8, 7, 4, 9, 45, 2]
+for x in range(10):
+    if a[x] % 2 != 0:
+        if a[x] > 5:
+            print(a[x])
