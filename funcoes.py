@@ -23,13 +23,12 @@ def pesquisa(numero):
         return "Z"
 
 
-a = []
-b = []
+ab = []
+ba = []
 
 
-def bota(num):
-    a.append(num)
+def bota(n1,n2):
+     ab.append(n1)
+     ba.append(n2)
 
 
-def coloca(numero):
-    b.append(numero)
