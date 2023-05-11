@@ -1,8 +1,6 @@
-nalunos = int(input("digite o número de alunos: "))
-lista_vazia = []
-c = 0
-for x in range(nalunos):
-    c = c+1
-    lista_vazia.append(input("digite o nome do aluno: "))
-print(lista_vazia)
+def estoque(nome, quantidade, valor):
+    return nome, quantidade * valor
 
+
+total = estoque("fubá", 30, 3.5)
+print(f" o produto {total[0]} custa {total[1]} R$")
