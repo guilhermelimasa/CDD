@@ -1,4 +1,12 @@
-def L (n):
-    for c in range(1, n+1):
-        print(str(c)*c   )
-L(5)
+def funcao(texto):
+    cont = 0
+    print(texto)
+    for c in texto:
+        if c != " ":
+            cont += 1
+    print(f"esse texto tem {cont} palavras")
+    for x in reversed(texto):
+        print(x, end=" ")
+
+
+funcao('o rato roeu a roupa do rei de roma')
