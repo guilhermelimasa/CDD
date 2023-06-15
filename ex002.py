@@ -1,5 +1,17 @@
-a = [2, 11, 6, 5, 8, 7, 4, 9, 45, 2]
-for x in range(10):
-    if a[x] % 2 != 0:
-        if a[x] > 5:
-            print(a[x])
+import mysql.connector
+
+banco = mysql.connector.connect(
+    host="localhost",
+    user='root',
+    password='cdd2023',
+    database='ESCOLATURMAC'
+)
+print(banco)
+meucursor = banco.cursor()
+pesquisa = 'select * from funcionarios;'
+meucursor.execute(pesquisa)
+resultado = meucursor.fetchall()
+for x in resultado:
+    print(x)
+meucursor.close()
+banco.close()
